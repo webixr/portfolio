@@ -1,0 +1,42 @@
+.mainStyle {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 1rem;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    overflow: hidden;
+    z-index: 1;
+}
+.mainStyle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(23,72,98);
+    background: linear-gradient(148deg, rgba(23,72,98,0) 56%, rgba(23,72,98,0.3337710084033614) 60%, rgba(23,72,98,1) 64%, rgba(25,167,206,1) 64%, rgba(24,139,174,1) 72%, rgba(25,167,206,1) 72%);
+    transform: translate(55px, 55px);
+    transition-duration: 0.2s;
+    z-index: -1;
+}
+.mainStyle:hover::before {
+    transform: translate(45px, 45px);
+}
+
+
+@media (max-width: 1140px) {
+    .mainStyle {
+        width: 100%;
+    }
+}
+
+.mainStyle svg {
+    font-size: 2.5rem;
+}

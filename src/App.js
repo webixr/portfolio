@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+import { About, Header, OverLay, Skills } from "./sections/sectionsIndex";
 
 function App() {
+  const [lang, setLang] = useState(1);
+
+  const changeLang = (e) => {
+    e.preventDefault();
+    setLang((l) => (l === 0 ? l + 1 : l - 1));
+    lang === 0 ? document.dir = "rtl" : document.dir = "ltr"
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <OverLay />
+      <Header langIndex={lang} langEvent={changeLang} />
+      <About langIndex={lang} />
+      <Skills langIndex={lang} />
+    </>
   );
 }
 

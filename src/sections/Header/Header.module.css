@@ -1,0 +1,77 @@
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heading {
+    margin-top: 300px;
+    text-align: center;
+}
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 767px) {
+    .heading {
+        margin-top: 125px;
+        text-align: center;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.socialButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.bar {
+    display: block;
+    width: 2px;
+    height: 35px;
+    background-color: var(--main-color);
+}
+
+.imageSection {
+    position: relative;
+    top: 30px;
+    width: 280px;
+    height: 380px;
+}
+.imageCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    background: rgb(3,105,161);
+    background: linear-gradient(180deg, rgba(3,105,161,1) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/images/person.png");
+    background-position: center bottom;
+    background-size: cover;
+    transition-duration: 0.3s;
+    z-index: 1;    
+}
+.image:hover {
+    transform: scale(1.1);   
+}

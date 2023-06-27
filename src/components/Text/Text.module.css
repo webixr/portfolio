@@ -1,0 +1,9 @@
+.mainStyle, .secondStyle {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+.secondStyle {
+    color: var(--gray-color);
+}

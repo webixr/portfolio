@@ -1,0 +1,27 @@
+.navBar {
+    max-width: 410px;
+    max-height: 82px;
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 24px;
+    border-radius: 1rem;
+    display: flex;
+    gap: 25px;
+    background-color: var(--second-color);
+    opacity: .50;
+    transition-duration: 0.2s;
+    z-index: 20;
+}
+.navBar:hover {
+    opacity: 1;
+}
+@media (max-width: 767px) {
+    .navBar {
+        max-width: 300px;
+        max-height: 82px;
+        padding: 16px; 
+        gap: 5px;
+    }
+}
