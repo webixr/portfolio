@@ -99,7 +99,7 @@ const textJson = [
     skills_json: "JSON",
 
     // portfolio ar
-    portfolio_title: "احر اعمالي",
+    portfolio_title: "اخر اعمالي",
     portfolio_heading: "نماذج الأعمال",
     portfolio_preView: "عرض",
 

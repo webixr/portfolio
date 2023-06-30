@@ -43,7 +43,7 @@ const Skills = ({ langIndex }) => {
   ];
   const result = cards.map((e, ind) => {
     return (
-      <Card>
+      <Card key={ind}>
         <>{icons[ind]}</>
         <Heading>{textJson[langIndex][e]}</Heading>
       </Card>
