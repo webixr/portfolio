@@ -19,6 +19,8 @@ import {
   BiCodeCurly as CurlyIcon,
   BiServer as ServerIcon,
   BiLogoNodejs as NodeIcon,
+  BiLogoGmail as GmailIcon,
+  BiLogoWhatsapp as WhatsappIcon,
 } from "react-icons/bi";
 
 export {
@@ -42,4 +44,6 @@ export {
   CurlyIcon,
   ServerIcon,
   NodeIcon,
+  GmailIcon,
+  WhatsappIcon,
 };

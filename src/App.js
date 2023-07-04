@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import { About, Header, OverLay, Portfolio, Skills } from "./sections/sectionsIndex";
+import { About, Contact, Header, OverLay, Portfolio, Skills } from "./sections/sectionsIndex";
 
 function App() {
   const [lang, setLang] = useState(1);
@@ -18,6 +18,7 @@ function App() {
       <About langIndex={lang} />
       <Skills langIndex={lang} />
       <Portfolio langIndex={lang} />
+      <Contact langIndex={lang} />
     </>
   );
 }
