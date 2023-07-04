@@ -20,10 +20,10 @@ const Menu = () => {
       <MainButton styleClass="iconButton" link="#Skills">
         <CodeIcon />
       </MainButton>
-      <MainButton styleClass="iconButton">
+      <MainButton styleClass="iconButton" link="#Portfolio">
         <BriefIcon />
       </MainButton>
-      <MainButton styleClass="iconButton">
+      <MainButton styleClass="iconButton" link="#Contact">
         <MessageIcon />
       </MainButton>
     </nav>

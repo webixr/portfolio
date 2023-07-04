@@ -35,27 +35,29 @@ const Contact = ({langIndex}) => {
         )
     })
   return (
-    <div>
+    <div id='Contact' className={style.contact + " container"}>
         <HeadingSection
-        subTitle={textJson[langIndex].portfolio_title}
-        title={textJson[langIndex].portfolio_heading}
+            subTitle={textJson[langIndex].contact_title}
+            title={textJson[langIndex].contact_heading}
         />
         <div className={style.container}>
-            <form className={style.form}>
-                <div className={style.formInputs}>
-                    <label htmlFor='fullName'>{textJson[langIndex].contact_formFullName}</label>
-                    <input type="text" placeholder={textJson[langIndex].contact_formFullName} />
-                </div>
-                <div className={style.formInputs}>
-                    <label htmlFor='fullName'>{textJson[langIndex].contact_formEmail}</label>
-                    <input type="text" placeholder={textJson[langIndex].contact_formEmail} />
-                </div>
-                <div className={style.formInputs}>
-                    <label htmlFor='fullName'>{textJson[langIndex].contact_formMessage}</label>
-                    <input type="text" placeholder={textJson[langIndex].contact_formMessage} />
-                </div>
-                <input type="submit" value={textJson[langIndex].contact_formSendButton}/>
-            </form>
+            <div className={style.formContainer}>
+                <form className={style.form}>
+                    <div className={style.formInputs}>
+                        <label htmlFor='fullName'>{textJson[langIndex].contact_formFullName}</label>
+                        <input type="text" id='fullName' placeholder={textJson[langIndex].contact_formFullName} />
+                    </div>
+                    <div className={style.formInputs}>
+                        <label htmlFor='email'>{textJson[langIndex].contact_formEmail}</label>
+                        <input type="text" id='email' placeholder={textJson[langIndex].contact_formEmail} />
+                    </div>
+                    <div className={style.formInputs}>
+                        <label htmlFor='message'>{textJson[langIndex].contact_formMessage}</label>
+                        <textarea type="text" id='message' defaultValue={textJson[langIndex].contact_formMessage}></textarea>
+                    </div>
+                    <input type="submit" value={textJson[langIndex].contact_formSendButton}/>
+                </form>
+            </div>
             <div className={style.cards}>{result}</div>
         </div>
     </div>

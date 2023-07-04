@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.formContainer {
+    position: relative;
+    width: 650px;
+}
+.form {
+    width: 100%;
+    position: sticky;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form div label {
+    color: var(--white-color);
+    font-size: 1rem;
+}
+.form div input, textarea {
+	border: none;
+	outline: none;
+	border-bottom: .2em solid var(--main-color);
+	background: var(--white-color);
+	border-radius: .2em .2em;
+	padding: 1em;
+	color: var(--dark-color);
+    font-family: 'Tajawal', sans-serif;
+}
+.form div textarea {
+    height: 150px;
+    resize: none;
+}
+.form input[type="submit"] {
+    border: none;
+	outline: none;
+	border-bottom: .2em solid var(--main-color);
+	background: var(--white-color);
+	border-radius: .2em .2em;
+	padding: 1em;
+	color: var(--dark-color);
+    font-family: 'Tajawal', sans-serif;
+} 
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.cards div {
+    width: 280px;
+    height: 280px;
+}
+@media (max-width: 942px) {
+    .cards {
+        width: 100%;
+        max-width: 670px;
+    }
+    .cards div {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+.cards div a {
+    color: var(--white-color);
+    text-underline-position: under;
+}

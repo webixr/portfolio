@@ -51,7 +51,10 @@ const Portfolio = ({langIndex}) => {
     })
   return (
     <div id="Portfolio" className={style.portfolio + " container"}>
-        
+        <HeadingSection
+            subTitle={textJson[langIndex].portfolio_title}
+            title={textJson[langIndex].portfolio_heading}
+        />
       <div className={style.container}>{result}</div>
     </div>
   )
