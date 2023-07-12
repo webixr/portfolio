@@ -75,3 +75,26 @@
 .image:hover {
     transform: scale(1.1);   
 }
+
+.mainStyle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.mainStyle {
+    color: var(--main-color);
+    background-color: transparent;
+}
+.mainStyle:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}

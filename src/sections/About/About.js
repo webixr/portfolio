@@ -49,7 +49,7 @@ const About = ({ langIndex }) => {
             <Text styleClass="secondStyle">
               {textJson[langIndex].About_description}
             </Text>
-            <MainButton styleClass="secondStyle">
+            <MainButton link="#Contact" styleClass="secondStyle" target={"_self"}>
               {textJson[langIndex].About_letsTalk}
             </MainButton>
           </div>

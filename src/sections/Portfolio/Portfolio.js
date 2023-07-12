@@ -9,22 +9,6 @@ const Portfolio = ({langIndex}) => {
             img: require("../../assets/images/website template image.jpg"),
         },
         {
-            name: "spa dashboard",
-            img: require("../../assets/images/website template image.jpg"),
-        },
-        {
-            name: "spa dashboard",
-            img: require("../../assets/images/website template image.jpg"),
-        },
-        {
-            name: "spa dashboard",
-            img: require("../../assets/images/website template image.jpg"),
-        },
-        {
-            name: "spa dashboard",
-            img: require("../../assets/images/website template image.jpg"),
-        },
-        {
             name: "portfolio",
             img: require("../../assets/images/website template image.jpg"),
         },

@@ -6,7 +6,7 @@ const MainButton = ({ children, styleClass, link, onclick, target }) => {
         styleClass === undefined || "" ? style.mainStyle : style[styleClass]
       }
       href={link === undefined || "" ? "#" : link}
-      target={target === undefined || "" ? "" : target}
+      target={target === undefined || "" ? "_blank" : target}
       onClick={onclick}
     >
       {children}

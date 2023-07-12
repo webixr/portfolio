@@ -5,8 +5,10 @@ import {
   TwitterIcon,
   LinkedinIcon,
   WorldIcon,
+  WhatsappIcon,
 } from "../../assets/IconsIndex/IconsIndex";
 import textJson from "../../assets/TextFile/TextFile";
+import { BiMailSend } from "react-icons/bi";
 const Header = ({ langIndex, langEvent }) => {
   return (
     <header id="Header" className={style.header + " container"}>
@@ -17,10 +19,14 @@ const Header = ({ langIndex, langEvent }) => {
           {textJson[langIndex].header_jobTitle}
         </Text>
         <div className={style.buttons}>
-          <MainButton link="./assets/images/background.jpg" download>
+          <a className={style.mainStyle} href={require("../../assets/cv/cv.pdf")} download="abdulmalik-cv.pdf">
             {textJson[langIndex].header_DownloadCV}
-          </MainButton>
-          <MainButton styleClass="secondStyle">
+          </a>
+          <MainButton
+            styleClass="secondStyle"
+            link="#Contact"
+            target={"_self"}
+          >
             {textJson[langIndex].header_letsTalk}
           </MainButton>
         </div>
@@ -28,17 +34,20 @@ const Header = ({ langIndex, langEvent }) => {
 
       <div className={style.footer}>
         <div className={style.socialButtons}>
-          <MainButton styleClass={"socialButton"}>
-            <FacebookIcon />
-          </MainButton>
           <MainButton
-            link="https://twitter.com/webixr"
+            link="mailto:someone@example.com"
             styleClass={"socialButton"}
           >
-            <TwitterIcon />
+            <BiMailSend />
           </MainButton>
-          <MainButton styleClass={"socialButton"}>
-            <LinkedinIcon />
+          <MainButton
+            link="https://wa.link/dii1bk"
+            styleClass={"socialButton"}
+          >
+            <WhatsappIcon />
+          </MainButton>
+          <MainButton link="https://twitter.com/webixr" styleClass={"socialButton"}>
+            <TwitterIcon />
           </MainButton>
           <span className={style.bar}></span>
         </div>
