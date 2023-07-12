@@ -17,7 +17,7 @@ const Header = ({ langIndex, langEvent }) => {
           {textJson[langIndex].header_jobTitle}
         </Text>
         <div className={style.buttons}>
-          <MainButton link="../../assets/images/background.jpg" download>
+          <MainButton link="./assets/images/background.jpg" download>
             {textJson[langIndex].header_DownloadCV}
           </MainButton>
           <MainButton styleClass="secondStyle">
