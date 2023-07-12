@@ -56,11 +56,6 @@ const textJson = [
 
     // footer
     footer_title: "abdulmalik ali",
-    footer_home: "abdulmalik ali",
-    footer_about: "abdulmalik ali",
-    footer_skills: "abdulmalik ali",
-    footer_portfolio: "abdulmalik ali",
-    footer_contact: "abdulmalik ali",
     footer_copyRight: "Abdulmalik Ali, All rights reserved.",
   },
   // arabic
@@ -120,11 +115,6 @@ const textJson = [
 
     // footer ar
     footer_title: "عبدالملك علي",
-    footer_home: "الرئيسية",
-    footer_about: "عني",
-    footer_skills: "مهاراتي",
-    footer_portfolio: "معرض الاعمال",
-    footer_contact: "التواصل",
     footer_copyRight: "عبدالملك علي ، جميع الحقوق محفوظة.",
   },
 ];

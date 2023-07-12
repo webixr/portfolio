@@ -9,19 +9,19 @@ const Contact = ({langIndex}) => {
             icon: <GmailIcon />,
             heading: textJson[langIndex].contact_email,
             title: textJson[langIndex].contact_emailAddress,
-            link: "google.com",
+            link: "mailto:webixr1@gmail.com",
         },
         {
             icon: <WhatsappIcon />,
-            heading: textJson[langIndex].contact_email,
-            title: textJson[langIndex].contact_emailAddress,
-            link: "google.com",
+            heading: textJson[langIndex].contact_whatsApp,
+            title: textJson[langIndex].contact_whatsAppAddress,
+            link: "https://wa.link/dii1bk",
         },
         {
             icon: <TwitterIcon />,
-            heading: textJson[langIndex].contact_email,
-            title: textJson[langIndex].contact_emailAddress,
-            link: "google.com",
+            heading: textJson[langIndex].contact_twitter,
+            title: textJson[langIndex].contact_twitteAddressr,
+            link: "https://twitter.com/webixr",
         },
     ]
     const result = cardsData.map((e, ind) => {
@@ -42,18 +42,20 @@ const Contact = ({langIndex}) => {
         />
         <div className={style.container}>
             <div className={style.formContainer}>
-                <form className={style.form}>
+                <form className={style.form} action="https://formsubmit.co/webixr1@gmail.com" method="POST" >
+                    <input type="hidden" name="_subject" value="New message from webixr page." />
+                    <input type="hidden" name="_captcha" value="false" />
                     <div className={style.formInputs}>
                         <label htmlFor='fullName'>{textJson[langIndex].contact_formFullName}</label>
-                        <input type="text" id='fullName' placeholder={textJson[langIndex].contact_formFullName} />
+                        <input type="text" id='fullName' name='fullName' placeholder={textJson[langIndex].contact_formFullName} />
                     </div>
                     <div className={style.formInputs}>
                         <label htmlFor='email'>{textJson[langIndex].contact_formEmail}</label>
-                        <input type="text" id='email' placeholder={textJson[langIndex].contact_formEmail} />
+                        <input type="text" id='email' name='email' placeholder={textJson[langIndex].contact_formEmail} />
                     </div>
                     <div className={style.formInputs}>
                         <label htmlFor='message'>{textJson[langIndex].contact_formMessage}</label>
-                        <textarea type="text" id='message' defaultValue={textJson[langIndex].contact_formMessage}></textarea>
+                        <textarea type="text" id='message' name='message' defaultValue={textJson[langIndex].contact_formMessage}></textarea>
                     </div>
                     <input type="submit" value={textJson[langIndex].contact_formSendButton}/>
                 </form>
