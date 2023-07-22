@@ -35,12 +35,6 @@ const Header = ({ langIndex, langEvent }) => {
       <div className={style.footer}>
         <div className={style.socialButtons}>
           <MainButton
-            link="mailto:someone@example.com"
-            styleClass={"socialButton"}
-          >
-            <BiMailSend />
-          </MainButton>
-          <MainButton
             link="https://wa.link/dii1bk"
             styleClass={"socialButton"}
           >

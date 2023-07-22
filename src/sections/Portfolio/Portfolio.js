@@ -5,24 +5,24 @@ import style from './Portfolio.module.css'
 const Portfolio = ({langIndex}) => {
     const card = [
         {
-            name: "spa dashboard",
-            img: require("../../assets/images/website template image.jpg"),
+            name: "agency landing page",
+            img: require("../../assets/images/agency landing.png"),
         },
         {
-            name: "portfolio",
-            img: require("../../assets/images/website template image.jpg"),
+            name: "digital marketing",
+            img: require("../../assets/images/digital marketing.png"),
         },
         {
-            name: "snake game",
-            img: require("../../assets/images/website template image.jpg"),
+            name: "insurance page",
+            img: require("../../assets/images/insurance.png"),
         },
         {
-            name: "calculator",
-            img: require("../../assets/images/website template image.jpg"),
+            name: "next invest",
+            img: require("../../assets/images/next invest.png"),
         },
         {
-            name: "todo list",
-            img: require("../../assets/images/website template image.jpg"),
+            name: "studio design",
+            img: require("../../assets/images/studio design.png"),
         },
     ]
     const result = card.map((e, ind) => {

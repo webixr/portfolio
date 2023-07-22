@@ -43,7 +43,7 @@
     height: 100%;
     border-radius: 2rem;
     background-image: url(.../../../../assets/images/person-bg.jpg);
-    background-position: center bottom;
+    background-position: top;
     background-size: cover;
     transform: rotate(8deg);
     transition-duration: 0.5s;
