@@ -55,7 +55,7 @@ const Contact = ({ langIndex }) => {
         <div className={style.formContainer}>
           <form
             className={style.form}
-            action="https://formsubmit.co/el/tubehi"
+            action="https://formsubmit.co/webixr1@gmail.com"
             method="POST"
           >
             <input
