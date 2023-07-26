@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b242018e.css",
-    "main.js": "/portfolio/static/js/main.e4ad2f1b.js",
+    "main.css": "/portfolio/static/css/main.a7ef96a0.css",
+    "main.js": "/portfolio/static/js/main.57cd81f8.js",
     "static/media/person-bg.jpg": "/portfolio/static/media/person-bg.dbdfb00e393d1641d4ba.jpg",
     "static/media/background.jpg": "/portfolio/static/media/background.68040df7eafe35aadafc.jpg",
     "static/media/agency landing.png": "/portfolio/static/media/agency landing.ce4793556cdbd07e2fbd.png",
@@ -10,13 +10,13 @@
     "static/media/insurance.png": "/portfolio/static/media/insurance.0d3412358103a5b3acd1.png",
     "static/media/next invest.png": "/portfolio/static/media/next invest.2ffae32780f31ec62f54.png",
     "static/media/person.png": "/portfolio/static/media/person.18be75fd375b532a881f.png",
-    "static/media/cv.pdf": "/portfolio/static/media/cv.ac0398d4ca249e568588.pdf",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.69eb81408d229040519b.pdf",
     "index.html": "/portfolio/index.html",
-    "main.b242018e.css.map": "/portfolio/static/css/main.b242018e.css.map",
-    "main.e4ad2f1b.js.map": "/portfolio/static/js/main.e4ad2f1b.js.map"
+    "main.a7ef96a0.css.map": "/portfolio/static/css/main.a7ef96a0.css.map",
+    "main.57cd81f8.js.map": "/portfolio/static/js/main.57cd81f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b242018e.css",
-    "static/js/main.e4ad2f1b.js"
+    "static/css/main.a7ef96a0.css",
+    "static/js/main.57cd81f8.js"
   ]
 }
